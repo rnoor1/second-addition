@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://bn3qghvgv203v"]
+[gd_scene load_steps=15 format=4 uid="uid://bn3qghvgv203v"]
 
 [ext_resource type="PackedScene" uid="uid://8ux8todurxo1" path="res://scenes/background.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://cfs3c6nnyb4dl" path="res://autumn town/TileSheet_32x32.png" id="1_yqjtg"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://1xkgvryjklhn" path="res://scenes/marketstallthree.tscn" id="9_kvpfn"]
 [ext_resource type="PackedScene" uid="uid://dfattgy37fa3c" path="res://scenes/marketstallone.tscn" id="10_dinhu"]
 [ext_resource type="PackedScene" uid="uid://t1lur0xdi2je" path="res://scenes/twotree.tscn" id="11_kvpfn"]
+[ext_resource type="Texture2D" uid="uid://bw06yw34t0gyv" path="res://building assets/shop interior/Props/door.png" id="12_dinhu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
 texture = ExtResource("1_yqjtg")
@@ -272,6 +273,12 @@ position = Vector2(552, 512)
 
 [node name="twotree" parent="." instance=ExtResource("11_kvpfn")]
 position = Vector2(644, 514)
+
+[node name="Door" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(872.5, 490)
+scale = Vector2(1.03125, 1.25)
+texture = ExtResource("12_dinhu")
 
 [editable path="doors/door_One"]
 [editable path="doors/door_One2"]
