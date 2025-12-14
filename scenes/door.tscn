@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://mfl502f0hbrk"]
+
+[ext_resource type="Script" uid="uid://c0oq7pavqb81u" path="res://scenes/door.gd" id="1_hpvv5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5f452"]
+
+[node name="door" type="Area2D"]
+script = ExtResource("1_hpvv5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5f452")
+
+[node name="spawn" type="Marker2D" parent="."]
+
+[node name="Prompt" type="Label" parent="."]
+offset_left = -2.0
+offset_top = -8.0
+offset_right = 119.0
+offset_bottom = 41.0
+scale = Vector2(0.6, 0.6)
+text = "Press E to Enter
+"

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbnxkontvoxtp"]
+
+[ext_resource type="Texture2D" uid="uid://b5y0phbelonxv" path="res://autumn town/props(edited for cropping buildings).png" id="1_m5xox"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="marketstalltwo" type="Sprite2D" parent="."]
+texture = ExtResource("1_m5xox")
+region_enabled = true
+region_rect = Rect2(121, 255, 94, 76)

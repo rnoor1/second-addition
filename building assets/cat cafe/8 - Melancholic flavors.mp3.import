@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btwpio5ff41u0"
+path="res://.godot/imported/8 - Melancholic flavors.mp3-452bcc7f0f4375f01b548070efcb0706.mp3str"
+
+[deps]
+
+source_file="res://building assets/cat cafe/8 - Melancholic flavors.mp3"
+dest_files=["res://.godot/imported/8 - Melancholic flavors.mp3-452bcc7f0f4375f01b548070efcb0706.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

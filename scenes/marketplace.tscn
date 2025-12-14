@@ -1,0 +1,256 @@
+[gd_scene load_steps=13 format=4 uid="uid://dmoek4kbq0v7x"]
+
+[ext_resource type="PackedScene" uid="uid://8ux8todurxo1" path="res://scenes/background.tscn" id="1_dplui"]
+[ext_resource type="Texture2D" uid="uid://cfs3c6nnyb4dl" path="res://autumn town/TileSheet_32x32.png" id="2_tp35m"]
+[ext_resource type="PackedScene" uid="uid://1xkgvryjklhn" path="res://scenes/marketstallthree.tscn" id="3_0bc21"]
+[ext_resource type="PackedScene" uid="uid://dfattgy37fa3c" path="res://scenes/marketstallone.tscn" id="4_ibvc7"]
+[ext_resource type="PackedScene" uid="uid://dbnxkontvoxtp" path="res://scenes/markstalltwo.tscn" id="5_45fnx"]
+[ext_resource type="Texture2D" uid="uid://b5y0phbelonxv" path="res://autumn town/props(edited for cropping buildings).png" id="6_0bc21"]
+[ext_resource type="PackedScene" uid="uid://bs2i7xrpsxbfv" path="res://scenes/player.tscn" id="7_ibvc7"]
+[ext_resource type="PackedScene" uid="uid://t1lur0xdi2je" path="res://scenes/twotree.tscn" id="8_n81e6"]
+[ext_resource type="PackedScene" uid="uid://kh1558k4si8g" path="res://scenes/onetree.tscn" id="9_ly2kh"]
+[ext_resource type="PackedScene" uid="uid://d30ikc5eie1bi" path="res://scenes/threetree.tscn" id="10_0p1lr"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rkrx5"]
+texture = ExtResource("2_tp35m")
+texture_region_size = Vector2i(32, 32)
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+3:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+5:5/0 = 0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+6:5/0 = 0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+7:5/0 = 0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:6/0 = 0
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:6/0 = 0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+3:6/0 = 0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+5:6/0 = 0
+5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+6:6/0 = 0
+7:6/0 = 0
+7:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:7/0 = 0
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:7/0 = 0
+2:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+3:7/0 = 0
+3:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+5:7/0 = 0
+5:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+6:7/0 = 0
+6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+7:7/0 = 0
+7:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:9/0 = 0
+2:9/0 = 0
+2:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+5:10/0 = 0
+5:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+6:10/0 = 0
+6:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+7:10/0 = 0
+7:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[sub_resource type="TileSet" id="TileSet_n81e6"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+sources/2 = SubResource("TileSetAtlasSource_rkrx5")
+
+[node name="marketplace" type="Node2D"]
+
+[node name="background" parent="." instance=ExtResource("1_dplui")]
+position = Vector2(2, 0)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_n81e6")
+rendering_quadrant_size = 32
+format = 2
+layer_0/tile_data = PackedInt32Array(1048594, 131074, 6, 1048595, 131074, 6, 1048596, 131074, 6, 1048597, 131074, 6, 1048598, 131074, 6, 1048599, 131074, 6, 1048600, 131074, 6, 1048601, 131074, 6, 1048602, 131074, 6, 1048603, 131074, 6, 1114130, 131074, 6, 1114131, 131074, 6, 1114132, 131074, 6, 1114133, 131074, 6, 1114134, 131074, 6, 1114135, 131074, 6, 1114136, 131074, 6, 1114137, 131074, 6, 1114138, 131074, 6, 1114139, 131074, 6, 1048604, 131074, 6, 1048605, 131074, 6, 1048606, 131074, 6, 1048607, 131074, 6, 1048608, 131074, 6, 1048609, 131074, 6, 1048610, 131074, 6, 1048611, 131074, 6, 1114140, 131074, 6, 1114141, 131074, 6, 1114142, 131074, 6, 1114143, 131074, 6, 1114144, 131074, 6, 1114145, 131074, 6, 1114146, 131074, 6, 1114147, 131074, 6, 1179670, 131074, 6, 1179672, 131074, 6, 1179671, 131074, 6, 1245208, 131074, 6, 1245209, 131074, 6, 1179673, 131074, 6, 1179674, 131074, 6, 1179675, 131074, 6, 1179683, 131074, 6, 1179682, 131074, 6, 1179669, 131074, 6, 1179668, 131074, 6, 1245217, 131074, 6, 1179681, 131074, 6, 1245219, 131074, 6)
+
+[node name="Layer1" type="TileMapLayer" parent="TileMap"]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAAAABAAAgACAAYAADABABAAAgACAAYAADACABAAAgACAAYAADADABAAAgACAAYAADABABEAAgACAAYAADACABEAAgACAAYAADADABEAAgACAAYAADADABIAAgACAAYAADAEABAAAgACAAYAADAEABEAAgACAAYAADAFABAAAgACAAYAADAGABAAAgACAAYAADAIABAAAgACAAYAADAHABAAAgACAAYAADAHABEAAgACAAYAADAGABEAAgACAAYAADAIABEAAgACAAYAADAIABIAAgACAAYAADAHABIAAgACAAYAADAJABEAAgACAAYAADAJABAAAgACAAYAADAIABMAAgACAAYAADAKABAAAgACAAYAADALABAAAgACAAYAADAKABEAAgACAAYAADAJABIAAgACAAYAADAKABIAAgACAAYAADAMABAAAgACAAYAADALABEAAgACAAYAADAFABEAAgACAAYAADANABAAAgACAAYAADAOABAAAgACAAYAADAMABEAAgACAAYAADAPABAAAgACAAYAADAQABAAAgACAAYAADARABAAAgACAAYAADAPABEAAgACAAYAADAOABEAAgACAAYAADAQABIAAgACAAYAADAQABEAAgACAAYAADARABEAAgACAAYAADA=")
+tile_set = SubResource("TileSet_n81e6")
+rendering_quadrant_size = 32
+
+[node name="stalls" type="Node" parent="."]
+
+[node name="Node2D" parent="stalls" instance=ExtResource("3_0bc21")]
+position = Vector2(129, 449)
+
+[node name="Node2D2" parent="stalls" instance=ExtResource("4_ibvc7")]
+position = Vector2(270, 474)
+
+[node name="Node2D3" parent="stalls" instance=ExtResource("3_0bc21")]
+position = Vector2(671, 449)
+
+[node name="Node2D4" parent="stalls" instance=ExtResource("5_45fnx")]
+position = Vector2(812, 474)
+
+[node name="building" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="building"]
+position = Vector2(498, 444)
+scale = Vector2(1.0597014, 1)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(399, 98, 134, 133)
+
+[node name="Sprite2D2" type="Sprite2D" parent="building"]
+position = Vector2(377.00003, 435)
+scale = Vector2(1.0597014, 0.86206895)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(306, 554, 124, 58)
+
+[node name="Sprite2D3" type="Sprite2D" parent="building"]
+position = Vector2(282, 479)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(471, 311, 39, 17)
+
+[node name="Sprite2D4" type="Sprite2D" parent="building"]
+position = Vector2(625, 475)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(471, 311, 39, 17)
+
+[node name="Sprite2D5" type="Sprite2D" parent="building"]
+position = Vector2(893.00006, 494)
+scale = Vector2(0.64672214, 0.66071475)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(212, 594, 97, 56)
+
+[node name="Sprite2D6" type="Sprite2D" parent="building"]
+position = Vector2(837.00006, 478)
+scale = Vector2(0.64672214, 0.66071475)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(500, 479, 15, 31)
+
+[node name="Sprite2D7" type="Sprite2D" parent="building"]
+position = Vector2(931.99994, 489)
+scale = Vector2(1.1684735, 1.5345632)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(500, 479, 15, 31)
+
+[node name="Sprite2D8" type="Sprite2D" parent="building"]
+position = Vector2(726.99994, 464)
+scale = Vector2(1.1684735, 1.5345632)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(342, 265, 51, 31)
+
+[node name="lamp" type="Sprite2D" parent="building"]
+position = Vector2(867, 465)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(476, 413, 24, 98)
+
+[node name="lamp4" type="Sprite2D" parent="building"]
+position = Vector2(586, 465)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(476, 413, 24, 98)
+
+[node name="lamp6" type="Sprite2D" parent="building"]
+position = Vector2(217, 465)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(476, 413, 24, 98)
+
+[node name="lamp7" type="Sprite2D" parent="building"]
+z_index = 1
+position = Vector2(45, 465)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(476, 413, 24, 98)
+
+[node name="lamp5" type="Sprite2D" parent="building"]
+position = Vector2(41, 465)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(476, 413, 24, 98)
+
+[node name="lamp2" type="Sprite2D" parent="building"]
+position = Vector2(972, 465)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(476, 413, 24, 98)
+
+[node name="lamp3" type="Sprite2D" parent="building"]
+position = Vector2(1057, 465)
+texture = ExtResource("6_0bc21")
+region_enabled = true
+region_rect = Rect2(476, 413, 24, 98)
+
+[node name="player" parent="." instance=ExtResource("7_ibvc7")]
+z_index = 15
+position = Vector2(29, 511)
+
+[node name="tree" type="Node" parent="."]
+
+[node name="twotree" parent="tree" instance=ExtResource("8_n81e6")]
+position = Vector2(410, 513)
+
+[node name="twotree2" parent="tree" instance=ExtResource("8_n81e6")]
+position = Vector2(37, 513)
+
+[node name="onetree" parent="tree" instance=ExtResource("9_ly2kh")]
+z_index = -1
+position = Vector2(957, 512)
+
+[node name="onetree3" parent="tree" instance=ExtResource("9_ly2kh")]
+z_index = -1
+position = Vector2(578, 516)
+
+[node name="onetree4" parent="tree" instance=ExtResource("9_ly2kh")]
+z_index = -1
+position = Vector2(281, 512)
+
+[node name="Node2D" parent="tree" instance=ExtResource("10_0p1lr")]
+z_index = -1
+position = Vector2(1011, 514)
+
+[node name="Node2D3" parent="tree" instance=ExtResource("10_0p1lr")]
+z_index = -1
+position = Vector2(328, 513)
+
+[node name="Node2D2" parent="tree" instance=ExtResource("10_0p1lr")]
+z_index = -1
+position = Vector2(770, 512)
+
+[node name="onetree2" parent="tree" instance=ExtResource("9_ly2kh")]
+position = Vector2(1121, 513)

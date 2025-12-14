@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://kh1558k4si8g"]
+
+[ext_resource type="Texture2D" uid="uid://b057tlr16sbu" path="res://autumn town/Props & Scenery/Props_ForestDay.png" id="1_pjal0"]
+
+[node name="onetree" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -47)
+texture = ExtResource("1_pjal0")
+region_enabled = true
+region_rect = Rect2(3, 21, 96, 96)

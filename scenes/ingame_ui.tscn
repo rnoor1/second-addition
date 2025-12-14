@@ -1,0 +1,112 @@
+[gd_scene load_steps=8 format=3 uid="uid://bmir00hpk1cn8"]
+
+[ext_resource type="Texture2D" uid="uid://chnj46e8skdw4" path="res://title screen:ui/UiCozyFree.png" id="1_v3yap"]
+[ext_resource type="Texture2D" uid="uid://dj54jg7hvustm" path="res://title screen:ui/CatUIFree/free.png" id="2_h2rwu"]
+[ext_resource type="FontFile" uid="uid://bs76dcp3vb5w5" path="res://fonts/3_4_r_font_.ttf" id="3_hifx3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_npobg"]
+texture = ExtResource("2_h2rwu")
+region_rect = Rect2(161, 1, 14, 14)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i42rf"]
+texture = ExtResource("2_h2rwu")
+region_rect = Rect2(177, 2, 14, 13)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cm6yq"]
+texture = ExtResource("2_h2rwu")
+region_rect = Rect2(129, 33, 14, 14)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f6424"]
+texture = ExtResource("2_h2rwu")
+region_rect = Rect2(145, 34, 14, 13)
+
+[node name="ingameUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="popupMenu" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="popupMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 40
+
+[node name="basemenuScreen" type="MarginContainer" parent="popupMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="NinePatchRect" type="NinePatchRect" parent="popupMenu/VBoxContainer/basemenuScreen"]
+custom_minimum_size = Vector2(400, 250)
+layout_mode = 2
+texture = ExtResource("1_v3yap")
+region_rect = Rect2(8, 167, 87, 81)
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 40
+
+[node name="buttonContainer" type="VBoxContainer" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_constants/separation = 6
+
+[node name="topbuttonContainer" type="HBoxContainer" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer/buttonContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="pauseButton" type="Button" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer/buttonContainer/topbuttonContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_npobg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_i42rf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_i42rf")
+
+[node name="bottombuttonContainer2" type="HBoxContainer" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer/buttonContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="quitButton" type="Button" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer/buttonContainer/bottombuttonContainer2"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_cm6yq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_f6424")
+theme_override_styles/hover = SubResource("StyleBoxTexture_f6424")
+
+[node name="statDisplay" type="VBoxContainer" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer"]
+layout_mode = 2
+
+[node name="coinDisplay" type="Label" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer/statDisplay"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_hifx3")
+
+[node name="seperator" type="Control" parent="popupMenu/VBoxContainer"]
+layout_mode = 2

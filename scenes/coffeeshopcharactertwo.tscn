@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://bv22vy87dq1d4"]
+
+[ext_resource type="Texture2D" uid="uid://da2j58mgymho3" path="res://npcs/coffee shop characters/cat-orange-side.png" id="1_lg7i0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya61t"]
+atlas = ExtResource("1_lg7i0")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mnuyn"]
+atlas = ExtResource("1_lg7i0")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0dvx"]
+atlas = ExtResource("1_lg7i0")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5x7br"]
+atlas = ExtResource("1_lg7i0")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_23c7t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ya61t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mnuyn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0dvx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5x7br")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lg7i0"]
+radius = 6.0
+
+[node name="coffeeshopcharactertwo" type="CharacterBody2D"]
+motion_mode = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -7)
+sprite_frames = SubResource("SpriteFrames_23c7t")
+animation = &"idle"
+frame_progress = 0.2879018
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_lg7i0")

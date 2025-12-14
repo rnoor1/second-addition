@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://cqrmpp84hysop"]
+
+[ext_resource type="Texture2D" uid="uid://blhdpgtu3lppy" path="res://npcs/coffee shop characters/cat-waiter-side.png" id="1_7qlki"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g44kb"]
+atlas = ExtResource("1_7qlki")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0msy"]
+atlas = ExtResource("1_7qlki")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4a0wl"]
+atlas = ExtResource("1_7qlki")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0t1ve"]
+atlas = ExtResource("1_7qlki")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a1fmx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g44kb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0msy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4a0wl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0t1ve")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7qlki"]
+radius = 5.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -7)
+scale = Vector2(0.87500006, 1)
+sprite_frames = SubResource("SpriteFrames_a1fmx")
+frame_progress = 0.06299594
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_7qlki")
