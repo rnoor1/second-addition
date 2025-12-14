@@ -1,6 +1,6 @@
 extends Area2D
 class_name Door
-
+@export var door_tag: String
 @export var destination_level_tag: String
 @export var destination_door_tag: String
 
@@ -10,6 +10,9 @@ var player_inside := false
 
 func _ready() -> void:
 	#  THIS IS REQUIRED
+	add_to_group("doors")
+	print("✔ Door registered:", name, " tag:", door_tag)
+
 	body_entered.connect(_on_body_entered)
 	body_exited.connect(_on_body_exited)
 
@@ -37,6 +40,10 @@ func _process(_delta):
 			prompt.global_position = player.global_position + Vector2(0, -40)
 
 	if player_inside and Input.is_action_just_pressed("interact"):
+		print("🚪 Door used:", name)
+		print("→ Level:", destination_level_tag)
+		print("→ Door tag:", destination_door_tag)
+
 		NavigationManager.go_to_level(
 			destination_level_tag,
 			destination_door_tag
