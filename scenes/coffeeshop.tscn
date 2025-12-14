@@ -503,11 +503,11 @@ motion_mode = 1
 
 [node name="coffeeshopcharactertwo" parent="npcs" instance=ExtResource("9_tom0m")]
 z_index = 16
-position = Vector2(390, 331)
+position = Vector2(436, 316)
 
 [node name="coffeeshopcharacter" parent="npcs" instance=ExtResource("10_tpt6m")]
 z_index = 17
-position = Vector2(342, 302)
+position = Vector2(346, 302)
 motion_mode = 1
 
 [editable path="door/door_Two"]
