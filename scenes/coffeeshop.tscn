@@ -474,12 +474,18 @@ color = Color(0.50980395, 0.42745098, 0.32941177, 1)
 [node name="door_Two" parent="door" instance=ExtResource("6_dfdrg")]
 z_index = 8
 position = Vector2(310, 412)
+monitoring = true
+monitorable = true
+priority = 1
+door_tag = "inside_cafe"
 destination_level_tag = "game"
-destination_door_tag = "One"
+destination_door_tag = "outside_cafe"
 
 [node name="Prompt" parent="door/door_Two" index="2"]
 modulate = Color(0.19593233, 0.15963048, 0.10600317, 1)
 z_index = 14
+text = "Press E to Exit
+"
 
 [node name="player" parent="." instance=ExtResource("7_6nyub")]
 z_index = 15
