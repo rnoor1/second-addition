@@ -36,30 +36,32 @@ func _ready():
 	print("✔ NavigationManager READY")
 	call_deferred("move_player_to_spawn")
 
-
 func move_player_to_spawn():
-	print("\n--- SPAWN CHECK ---")
-	print("Spawn door tag expected:", spawn_door_tag)
-
-	if spawn_door_tag == "":
-		print("No spawn_door_tag set")
-		return
-
 	var player = get_tree().get_first_node_in_group("player")
 	if not player:
-		print(" ERROR: Player not found in group 'player'")
+		# This is normal on start menu scenes
+		print("No player yet — skipping spawn")
 		return
 
-	print("✔ Player found:", player.name)
+	print("✓ Player found:", player.name)
 
 	var doors = get_tree().get_nodes_in_group("doors")
 	print("Doors found:", doors.size())
 
 	for door in doors:
 		print("Checking door:", door.name, "| tag:", door.door_tag)
+
 		if door.door_tag == spawn_door_tag:
-			print("✔ MATCH FOUND → Spawning player")
+			print("✓ MATCH FOUND → Spawning player")
 			player.global_position = door.global_position
 			return
+
+	print(" ERROR: No door matched tag:", spawn_door_tag)
+
+
+	print("ERROR: No door matched tag:", spawn_door_tag)
+
+
+
 
 	print("ERROR: No door matched tag:", spawn_door_tag)

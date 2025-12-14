@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://dmoek4kbq0v7x"]
+[gd_scene load_steps=19 format=4 uid="uid://dmoek4kbq0v7x"]
 
 [ext_resource type="PackedScene" uid="uid://8ux8todurxo1" path="res://scenes/background.tscn" id="1_dplui"]
 [ext_resource type="Texture2D" uid="uid://cfs3c6nnyb4dl" path="res://autumn town/TileSheet_32x32.png" id="2_tp35m"]
@@ -11,6 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://kh1558k4si8g" path="res://scenes/onetree.tscn" id="9_ly2kh"]
 [ext_resource type="PackedScene" uid="uid://d30ikc5eie1bi" path="res://scenes/threetree.tscn" id="10_0p1lr"]
 [ext_resource type="PackedScene" uid="uid://mfl502f0hbrk" path="res://scenes/door.tscn" id="11_ly2kh"]
+[ext_resource type="Script" uid="uid://do1whiihv8fxn" path="res://scenes/vendor.gd" id="12_0p1lr"]
+[ext_resource type="PackedScene" uid="uid://br3aa6ffwbsy5" path="res://scenes/world_item.tscn" id="13_lanxd"]
+[ext_resource type="PackedScene" uid="uid://f38h1aosvcmd" path="res://scenes/TaskUI.tscn" id="14_0bmh3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rkrx5"]
 texture = ExtResource("2_tp35m")
@@ -89,6 +92,9 @@ sources/2 = SubResource("TileSetAtlasSource_rkrx5")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0p1lr"]
 size = Vector2(30, 39)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lanxd"]
+size = Vector2(13, 14)
 
 [node name="marketplace" type="Node2D"]
 
@@ -224,6 +230,10 @@ region_rect = Rect2(476, 413, 24, 98)
 z_index = 15
 position = Vector2(55, 513)
 
+[node name="Camera2D" type="Camera2D" parent="player"]
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+
 [node name="tree" type="Node" parent="."]
 
 [node name="twotree" parent="tree" instance=ExtResource("8_n81e6")]
@@ -283,3 +293,16 @@ offset_left = 20.0
 offset_top = -41.0
 offset_right = 128.0
 offset_bottom = -18.0
+
+[node name="Vendor" type="Area2D" parent="."]
+script = ExtResource("12_0p1lr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Vendor"]
+position = Vector2(665, 489)
+shape = SubResource("RectangleShape2D_lanxd")
+
+[node name="WorldItem" parent="." instance=ExtResource("13_lanxd")]
+z_index = 1
+position = Vector2(668, 466)
+
+[node name="TaskUI" parent="." instance=ExtResource("14_0bmh3")]
