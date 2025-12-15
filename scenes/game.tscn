@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://bn3qghvgv203v"]
+[gd_scene load_steps=16 format=4 uid="uid://bn3qghvgv203v"]
 
 [ext_resource type="PackedScene" uid="uid://8ux8todurxo1" path="res://scenes/background.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://cfs3c6nnyb4dl" path="res://autumn town/TileSheet_32x32.png" id="1_yqjtg"]
@@ -13,7 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://t1lur0xdi2je" path="res://scenes/twotree.tscn" id="11_kvpfn"]
 [ext_resource type="Texture2D" uid="uid://bw06yw34t0gyv" path="res://building assets/shop interior/Props/door.png" id="12_dinhu"]
 [ext_resource type="PackedScene" uid="uid://f38h1aosvcmd" path="res://scenes/TaskUI.tscn" id="13_kvuet"]
-[ext_resource type="PackedScene" uid="uid://dq0g603rmpwsj" path="res://scenes/coin.tscn" id="14_trtic"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
 texture = ExtResource("1_yqjtg")
@@ -89,8 +88,6 @@ texture_region_size = Vector2i(32, 32)
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_yqjtg")
-
-[sub_resource type="LabelSettings" id="LabelSettings_trtic"]
 
 [node name="game" type="Node2D"]
 
@@ -214,16 +211,6 @@ limit_bottom = 550
 limit_smoothed = true
 position_smoothing_enabled = true
 
-[node name="Label" type="Label" parent="player/Camera2D"]
-unique_name_in_owner = true
-z_index = 15
-offset_left = -16.0
-offset_top = -159.0
-offset_right = 138.0
-offset_bottom = -140.0
-text = "Coin Count: 0"
-label_settings = SubResource("LabelSettings_trtic")
-
 [node name="doors" type="Node" parent="."]
 
 [node name="door_One" parent="doors" instance=ExtResource("8_gee14")]
@@ -243,6 +230,16 @@ rotation = -0.0040507535
 [node name="spawn" parent="doors/door_One" index="1"]
 position = Vector2(-8.000001, -2.0000002)
 rotation = 3.1155877
+
+[node name="Prompt" parent="doors/door_One" index="2"]
+offset_left = 3.0
+offset_top = -15.0
+offset_right = 124.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "Press E to ENTER
+"
 
 [node name="door_One2" parent="doors" instance=ExtResource("8_gee14")]
 z_index = 8
@@ -269,6 +266,9 @@ offset_left = 17.979574
 offset_top = -20.018396
 offset_right = 138.97957
 offset_bottom = 28.981604
+theme_override_colors/font_color = Color(0.29608035, 0.058342285, 0.04380185, 1)
+text = "Press E to ENTER
+"
 
 [node name="marketplace" type="Node" parent="."]
 
@@ -296,9 +296,27 @@ texture = ExtResource("12_dinhu")
 
 [node name="TaskUI" parent="." instance=ExtResource("13_kvuet")]
 
-[node name="coin" parent="." instance=ExtResource("14_trtic")]
-z_index = 7
-position = Vector2(88, 495)
+[node name="doorlabel" type="Label" parent="."]
+z_index = 4
+offset_left = 286.0
+offset_top = 436.0
+offset_right = 365.0
+offset_bottom = 459.0
+theme_override_colors/font_color = Color(0.21176471, 0.03529412, 0.05882353, 1)
+theme_override_colors/font_shadow_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
+theme_override_font_sizes/font_size = 12
+text = "COFFEE SHOP"
+
+[node name="doorlabel 2" type="Label" parent="."]
+z_index = 5
+offset_left = 838.0
+offset_top = 397.0
+offset_right = 918.0
+offset_bottom = 420.0
+theme_override_colors/font_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
+theme_override_colors/font_shadow_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
+theme_override_font_sizes/font_size = 10
+text = "MARKET PLACE"
 
 [editable path="doors/door_One"]
 [editable path="doors/door_One2"]

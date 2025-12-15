@@ -12,7 +12,7 @@ func _process(_delta):
 func update_task_text():
 	# Completed task
 	if "sell_apple" in TaskManager.completed_tasks:
-		task_label.text = "✅ Task completed!"
+		task_label.text = " Task completed!"
 		return
 
 	# Near vendor (before accepting)

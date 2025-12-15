@@ -9,13 +9,13 @@ script = ExtResource("1_uh18x")
 offset_left = 136.0
 offset_top = 199.0
 offset_right = 469.0
-offset_bottom = 319.0
+offset_bottom = 354.0
 
 [node name="Label" type="Label" parent="."]
 offset_left = 159.0
-offset_top = 224.0
+offset_top = 206.0
 offset_right = 452.0
-offset_bottom = 310.0
+offset_bottom = 346.0
 text = " WELCOME!
 "
 autowrap_mode = 1

@@ -40,7 +40,7 @@ func _process(_delta):
 			prompt.global_position = player.global_position + Vector2(0, -40)
 
 	if player_inside and Input.is_action_just_pressed("interact"):
-		print("🚪 Door used:", name)
+		print(" Door used:", name)
 		print("→ Level:", destination_level_tag)
 		print("→ Door tag:", destination_door_tag)
 
