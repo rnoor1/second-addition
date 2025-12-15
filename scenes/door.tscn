@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c0oq7pavqb81u" path="res://scenes/door.gd" id="1_hpvv5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5f452"]
+size = Vector2(26, 19)
 
 [node name="door" type="Area2D"]
 monitoring = false
@@ -20,5 +21,5 @@ offset_top = -8.0
 offset_right = 119.0
 offset_bottom = 41.0
 scale = Vector2(0.6, 0.6)
-text = "Press E to Enter
+text = "Press E to enter
 "

@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=4 uid="uid://bn3qghvgv203v"]
+[gd_scene load_steps=17 format=4 uid="uid://bn3qghvgv203v"]
 
 [ext_resource type="PackedScene" uid="uid://8ux8todurxo1" path="res://scenes/background.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://cfs3c6nnyb4dl" path="res://autumn town/TileSheet_32x32.png" id="1_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://b5y0phbelonxv" path="res://autumn town/props(edited for cropping buildings).png" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://kh1558k4si8g" path="res://scenes/onetree.tscn" id="5_p57ef"]
 [ext_resource type="PackedScene" uid="uid://d30ikc5eie1bi" path="res://scenes/threetree.tscn" id="6_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://dq0g603rmpwsj" path="res://scenes/coin.tscn" id="7_trtic"]
 [ext_resource type="PackedScene" uid="uid://bs2i7xrpsxbfv" path="res://scenes/player.tscn" id="7_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://mfl502f0hbrk" path="res://scenes/door.tscn" id="8_gee14"]
 [ext_resource type="PackedScene" uid="uid://dbnxkontvoxtp" path="res://scenes/markstalltwo.tscn" id="8_vtaks"]
@@ -211,6 +212,18 @@ limit_bottom = 550
 limit_smoothed = true
 position_smoothing_enabled = true
 
+[node name="coin count" type="Label" parent="player/Camera2D"]
+unique_name_in_owner = true
+z_index = 15
+offset_left = 38.0
+offset_top = -106.0
+offset_right = 192.0
+offset_bottom = -87.0
+theme_override_colors/font_color = Color(0.3137255, 0.19215687, 0.21176471, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.93333334, 0.8666667, 1)
+theme_override_colors/font_outline_color = Color(1, 0.93333334, 0.8666667, 1)
+text = "Coin Count: 0"
+
 [node name="doors" type="Node" parent="."]
 
 [node name="door_One" parent="doors" instance=ExtResource("8_gee14")]
@@ -230,6 +243,16 @@ rotation = -0.0040507535
 [node name="spawn" parent="doors/door_One" index="1"]
 position = Vector2(-8.000001, -2.0000002)
 rotation = 3.1155877
+
+[node name="Prompt" parent="doors/door_One" index="2"]
+offset_left = 3.0
+offset_top = -15.0
+offset_right = 124.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "Press E to ENTER
+"
 
 [node name="door_One2" parent="doors" instance=ExtResource("8_gee14")]
 z_index = 8
@@ -256,6 +279,9 @@ offset_left = 17.979574
 offset_top = -20.018396
 offset_right = 138.97957
 offset_bottom = 28.981604
+theme_override_colors/font_color = Color(0.29608035, 0.058342285, 0.04380185, 1)
+text = "Press E to ENTER
+"
 
 [node name="marketplace" type="Node" parent="."]
 
@@ -282,6 +308,35 @@ scale = Vector2(1.03125, 1.25)
 texture = ExtResource("12_dinhu")
 
 [node name="TaskUI" parent="." instance=ExtResource("13_kvuet")]
+
+[node name="doorlabel" type="Label" parent="."]
+z_index = 4
+offset_left = 286.0
+offset_top = 436.0
+offset_right = 365.0
+offset_bottom = 459.0
+theme_override_colors/font_color = Color(0.21176471, 0.03529412, 0.05882353, 1)
+theme_override_colors/font_shadow_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
+theme_override_font_sizes/font_size = 12
+text = "COFFEE SHOP"
+
+[node name="doorlabel 2" type="Label" parent="."]
+z_index = 5
+offset_left = 838.0
+offset_top = 397.0
+offset_right = 918.0
+offset_bottom = 420.0
+theme_override_colors/font_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
+theme_override_colors/font_shadow_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
+theme_override_font_sizes/font_size = 10
+text = "MARKET PLACE"
+
+[node name="coin" parent="." instance=ExtResource("7_trtic")]
+z_index = 10
+position = Vector2(75, 500)
+
+[node name="coin2" parent="." instance=ExtResource("7_trtic")]
+position = Vector2(641, 498)
 
 [editable path="doors/door_One"]
 [editable path="doors/door_One2"]
