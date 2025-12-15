@@ -1,19 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://br3aa6ffwbsy5"]
+[gd_scene load_steps=5 format=3 uid="uid://br3aa6ffwbsy5"]
 
 [ext_resource type="Script" uid="uid://bpdinlu3fuw7l" path="res://world_item.gd" id="1_k7chi"]
 [ext_resource type="Texture2D" uid="uid://dl3qwcjcgaule" path="res://building assets/cat cafe/apple .png" id="2_eoy2r"]
+[ext_resource type="AudioStream" uid="uid://bp53cphesckfu" path="res://sounds/pickup.wav" id="3_eoy2r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yg51s"]
 size = Vector2(20.25, 14)
 
-[node name="WorldItem" type="Area2D"]
+[node name="WorldItem" type="Area2D" groups=["world_items"]]
 script = ExtResource("1_k7chi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-z_index = 2
+z_index = 1
 shape = SubResource("RectangleShape2D_yg51s")
 
-[node name="Apple" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0.15624714, 0.31250143)
 scale = Vector2(0.025125002, 0.037890624)
 texture = ExtResource("2_eoy2r")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_eoy2r")

@@ -38,6 +38,21 @@ func handle_task():
 		if Inventory.has_item("apple"):
 			Inventory.remove_item("apple", 1)
 			Inventory.add_coins(10)
+
+			# 🔊 Play sell sound
+			$AudioStreamPlayer2D.play()
+
+			# 🗑 Remove apple from world
+			remove_apple_from_world()
+
 			TaskManager.complete_task()
 		else:
 			print("You don't have an apple yet!")
+
+func remove_apple_from_world():
+	var items = get_tree().get_nodes_in_group("world_items")
+	for item in items:
+		if item.item_id == "apple":
+			item.queue_free()
+			print("🍎 Apple removed from world")
+			return
