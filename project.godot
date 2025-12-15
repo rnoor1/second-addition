@@ -13,6 +13,7 @@ config_version=5
 config/name="capstone game"
 run/main_scene="uid://bao5txln7ilob"
 config/features=PackedStringArray("4.5", "GL Compatibility")
+boot_splash/bg_color=Color(0.5951542, 0.5951543, 0.5951541, 1)
 config/icon="res://icon.svg"
 
 [autoload]
@@ -27,6 +28,10 @@ Gametimer="*res://gametimer.gd"
 
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+
+[gui]
+
+theme/custom_font="uid://bs76dcp3vb5w5"
 
 [input]
 

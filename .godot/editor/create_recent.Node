@@ -1,9 +1,10 @@
-AudioStreamPlayer2D
 Label
+CollisionShape2D
+Area2D
+AnimatedSprite2D
+AudioStreamPlayer2D
 CanvasLayer
 Panel
-Area2D
-CollisionShape2D
 Camera2D
 Marker2D
 Node

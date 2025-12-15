@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://bn3qghvgv203v"]
+[gd_scene load_steps=18 format=4 uid="uid://bn3qghvgv203v"]
 
 [ext_resource type="PackedScene" uid="uid://8ux8todurxo1" path="res://scenes/background.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://cfs3c6nnyb4dl" path="res://autumn town/TileSheet_32x32.png" id="1_yqjtg"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://t1lur0xdi2je" path="res://scenes/twotree.tscn" id="11_kvpfn"]
 [ext_resource type="Texture2D" uid="uid://bw06yw34t0gyv" path="res://building assets/shop interior/Props/door.png" id="12_dinhu"]
 [ext_resource type="PackedScene" uid="uid://f38h1aosvcmd" path="res://scenes/TaskUI.tscn" id="13_kvuet"]
+[ext_resource type="PackedScene" uid="uid://dq0g603rmpwsj" path="res://scenes/coin.tscn" id="14_trtic"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
 texture = ExtResource("1_yqjtg")
@@ -88,6 +89,8 @@ texture_region_size = Vector2i(32, 32)
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_yqjtg")
+
+[sub_resource type="LabelSettings" id="LabelSettings_trtic"]
 
 [node name="game" type="Node2D"]
 
@@ -211,6 +214,16 @@ limit_bottom = 550
 limit_smoothed = true
 position_smoothing_enabled = true
 
+[node name="Label" type="Label" parent="player/Camera2D"]
+unique_name_in_owner = true
+z_index = 15
+offset_left = -16.0
+offset_top = -159.0
+offset_right = 138.0
+offset_bottom = -140.0
+text = "Coin Count: 0"
+label_settings = SubResource("LabelSettings_trtic")
+
 [node name="doors" type="Node" parent="."]
 
 [node name="door_One" parent="doors" instance=ExtResource("8_gee14")]
@@ -282,6 +295,10 @@ scale = Vector2(1.03125, 1.25)
 texture = ExtResource("12_dinhu")
 
 [node name="TaskUI" parent="." instance=ExtResource("13_kvuet")]
+
+[node name="coin" parent="." instance=ExtResource("14_trtic")]
+z_index = 7
+position = Vector2(88, 495)
 
 [editable path="doors/door_One"]
 [editable path="doors/door_One2"]

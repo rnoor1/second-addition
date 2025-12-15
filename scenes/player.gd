@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 @onready var animatedsprite: AnimatedSprite2D = $animatedsprite2d
+var coinCounter = 0
+@onready var coinLabel = %Label
 
 const SPEED := 150.0
 
@@ -41,3 +43,12 @@ func _physics_process(_delta):
 func _process(_delta):
 	if Input.is_action_just_pressed("interact"):
 		print("E PRESSED")
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+		if area.is_in_group("coin"):
+			setCoin(coinCounter + 50)
+			print(coinCounter)
+	
+func setCoin(newCointCount: int) -> void:
+	coinCounter = newCointCount
+	coinLabel.text = "Coin Count: " + str(coinCounter)
