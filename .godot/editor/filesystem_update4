@@ -1,10 +1,6 @@
-res://Inventory.gd
-res://TaskManager.gd
-res://scenes/world_item.tscn
-res://scenes/world_item.gd
-res://scenes/marketplace.tscn
-res://scenes/vendor.gd
+res://scenes/ingame_ui.tscn
+res://globalcounter.gd
+res://gametimer.gd
+res://scenes/stat_displaymenu.gd
+res://scenes/popup_menu.gd
 res://scenes/game.tscn
-res://scenes/CanvasLayer.tscn
-res://scenes/task_ui.gd
-res://scenes/TaskUI.tscn

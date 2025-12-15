@@ -231,7 +231,11 @@ z_index = 15
 position = Vector2(55, 513)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-zoom = Vector2(2, 2)
+zoom = Vector2(4, 4)
+limit_left = 0
+limit_top = 0
+limit_right = 1150
+limit_bottom = 550
 position_smoothing_enabled = true
 
 [node name="tree" type="Node" parent="."]

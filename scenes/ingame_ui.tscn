@@ -1,8 +1,18 @@
-[gd_scene load_steps=8 format=3 uid="uid://bmir00hpk1cn8"]
+[gd_scene load_steps=11 format=3 uid="uid://bmir00hpk1cn8"]
 
+[ext_resource type="Script" uid="uid://f01x8al61ugr" path="res://scenes/popup_menu.gd" id="1_npobg"]
 [ext_resource type="Texture2D" uid="uid://chnj46e8skdw4" path="res://title screen:ui/UiCozyFree.png" id="1_v3yap"]
 [ext_resource type="Texture2D" uid="uid://dj54jg7hvustm" path="res://title screen:ui/CatUIFree/free.png" id="2_h2rwu"]
 [ext_resource type="FontFile" uid="uid://bs76dcp3vb5w5" path="res://fonts/3_4_r_font_.ttf" id="3_hifx3"]
+[ext_resource type="Script" uid="uid://dsfxjpns530ye" path="res://scenes/stat_displaymenu.gd" id="3_npobg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hifx3"]
+texture = ExtResource("1_v3yap")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+region_rect = Rect2(117.95331, 167.23398, 25.01178, 5.245636)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_npobg"]
 texture = ExtResource("2_h2rwu")
@@ -28,26 +38,43 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="popupMenu" type="MarginContainer" parent="."]
+[node name="popupMenu" type="MarginContainer" parent="." node_paths=PackedStringArray("base_menu", "base_menuOpen")]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_npobg")
+base_menu = NodePath("baseMenu")
+base_menuOpen = NodePath("baseMenuOpen")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="popupMenu"]
+[node name="baseMenu" type="VBoxContainer" parent="popupMenu"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
 theme_override_constants/separation = 40
 
-[node name="basemenuScreen" type="MarginContainer" parent="popupMenu/VBoxContainer"]
+[node name="basemenuScreen" type="MarginContainer" parent="popupMenu/baseMenu"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="NinePatchRect" type="NinePatchRect" parent="popupMenu/VBoxContainer/basemenuScreen"]
+[node name="VBoxContainer" type="VBoxContainer" parent="popupMenu/baseMenu/basemenuScreen"]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="toggleMenuButton" type="Button" parent="popupMenu/baseMenu/basemenuScreen/VBoxContainer"]
+custom_minimum_size = Vector2(50, 10)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_hifx3")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hifx3")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hifx3")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="popupMenu/baseMenu/basemenuScreen/VBoxContainer"]
 custom_minimum_size = Vector2(400, 250)
 layout_mode = 2
 texture = ExtResource("1_v3yap")
@@ -57,29 +84,29 @@ patch_margin_top = 1
 patch_margin_right = 1
 patch_margin_bottom = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect"]
+[node name="MarginContainer" type="MarginContainer" parent="popupMenu/baseMenu/basemenuScreen/VBoxContainer/NinePatchRect"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 50
+theme_override_constants/margin_left = 45
+theme_override_constants/margin_top = 44
+theme_override_constants/margin_right = 44
 theme_override_constants/margin_bottom = 40
 
-[node name="buttonContainer" type="VBoxContainer" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer"]
+[node name="buttonContainer" type="VBoxContainer" parent="popupMenu/baseMenu/basemenuScreen/VBoxContainer/NinePatchRect/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 4
 theme_override_constants/separation = 6
 
-[node name="topbuttonContainer" type="HBoxContainer" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer/buttonContainer"]
+[node name="topbuttonContainer" type="HBoxContainer" parent="popupMenu/baseMenu/basemenuScreen/VBoxContainer/NinePatchRect/MarginContainer/buttonContainer"]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="pauseButton" type="Button" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer/buttonContainer/topbuttonContainer"]
+[node name="pauseButton" type="Button" parent="popupMenu/baseMenu/basemenuScreen/VBoxContainer/NinePatchRect/MarginContainer/buttonContainer/topbuttonContainer"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -88,11 +115,11 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_npobg")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_i42rf")
 theme_override_styles/hover = SubResource("StyleBoxTexture_i42rf")
 
-[node name="bottombuttonContainer2" type="HBoxContainer" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer/buttonContainer"]
+[node name="bottombuttonContainer2" type="HBoxContainer" parent="popupMenu/baseMenu/basemenuScreen/VBoxContainer/NinePatchRect/MarginContainer/buttonContainer"]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="quitButton" type="Button" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer/buttonContainer/bottombuttonContainer2"]
+[node name="quitButton" type="Button" parent="popupMenu/baseMenu/basemenuScreen/VBoxContainer/NinePatchRect/MarginContainer/buttonContainer/bottombuttonContainer2"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -101,12 +128,47 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_cm6yq")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_f6424")
 theme_override_styles/hover = SubResource("StyleBoxTexture_f6424")
 
-[node name="statDisplay" type="VBoxContainer" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer"]
+[node name="statDisplay" type="VBoxContainer" parent="popupMenu/baseMenu/basemenuScreen/VBoxContainer/NinePatchRect/MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+script = ExtResource("3_npobg")
 
-[node name="coinDisplay" type="Label" parent="popupMenu/VBoxContainer/basemenuScreen/NinePatchRect/MarginContainer/statDisplay"]
+[node name="coinDisplay" type="Label" parent="popupMenu/baseMenu/basemenuScreen/VBoxContainer/NinePatchRect/MarginContainer/statDisplay"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.6509804, 0.5568628, 0.4862745, 1)
+theme_override_colors/font_outline_color = Color(1, 0.9647059, 0.9411765, 1)
 theme_override_fonts/font = ExtResource("3_hifx3")
+theme_override_font_sizes/font_size = 31
+text = "COINS:"
 
-[node name="seperator" type="Control" parent="popupMenu/VBoxContainer"]
+[node name="timeDisplay" type="Label" parent="popupMenu/baseMenu/basemenuScreen/VBoxContainer/NinePatchRect/MarginContainer/statDisplay"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.6509804, 0.5568628, 0.4862745, 1)
+theme_override_colors/font_outline_color = Color(1, 0.9647059, 0.9411765, 1)
+theme_override_fonts/font = ExtResource("3_hifx3")
+theme_override_font_sizes/font_size = 31
+text = "TIME:"
+
+[node name="seperator" type="Control" parent="popupMenu/baseMenu"]
+layout_mode = 2
+
+[node name="baseMenuOpen" type="VBoxContainer" parent="popupMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 20
+
+[node name="toggleMenuButton" type="Button" parent="popupMenu/baseMenuOpen"]
+custom_minimum_size = Vector2(50, 10)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_hifx3")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hifx3")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hifx3")
+
+[node name="seperator" type="Control" parent="popupMenu/baseMenuOpen"]
+layout_mode = 2
+
+[connection signal="pressed" from="popupMenu/baseMenu/basemenuScreen/VBoxContainer/toggleMenuButton" to="popupMenu" method="_on_toggle_menu_button_pressed"]
