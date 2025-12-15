@@ -1,14 +1,24 @@
 extends Node
-var near_vendor := false
-var active_task: String = ""
-var completed_tasks: Array[String] = []
 
-func start_task(task_id: String) -> void:
-	active_task = task_id
-	print(" Task started:", task_id)
+enum TaskState {
+	NONE,
+	GET_BROOM,
+	SWEEP,
+	DONE
+}
 
-func complete_task() -> void:
-	if active_task != "":
-		print(" Task completed:", active_task)
-		completed_tasks.append(active_task)
-		active_task = ""
+var current_task: TaskState = TaskState.NONE
+
+func start_task():
+	current_task = TaskState.GET_BROOM
+	print("Task started: Get the broom")
+
+func pick_up_broom():
+	if current_task == TaskState.GET_BROOM:
+		current_task = TaskState.SWEEP
+		print("Task updated: Sweep the mess")
+
+func finish_task():
+	if current_task == TaskState.SWEEP:
+		current_task = TaskState.DONE
+		print("Task completed!")

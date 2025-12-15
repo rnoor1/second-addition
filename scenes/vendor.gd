@@ -29,7 +29,8 @@ func handle_task():
 
 	# ▶ Start task if not started
 	if TaskManager.active_task == "":
-		TaskManager.start_task("sell_apple")
+		TaskManager.start_task()
+
 		print("Task: Sell 1 apple for 10 coins")
 		return
 
