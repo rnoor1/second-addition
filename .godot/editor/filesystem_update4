@@ -1,7 +1,1 @@
-res://scenes/coffeeshop.tscn
-res://scenes/door.gd
-res://scenes/task_ui.gd
-res://world_item.gd
 res://scenes/marketplace.tscn
-res://scenes/door.tscn
-res://scenes/game.tscn

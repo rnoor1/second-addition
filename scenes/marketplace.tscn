@@ -102,7 +102,7 @@ size = Vector2(13, 14)
 [node name="marketplace" type="Node2D"]
 
 [node name="background" parent="." instance=ExtResource("1_dplui")]
-position = Vector2(3, 9)
+position = Vector2(3, 11)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_n81e6")
@@ -119,7 +119,7 @@ rendering_quadrant_size = 32
 [node name="stalls" type="Node" parent="."]
 
 [node name="Node2D" parent="stalls" instance=ExtResource("3_0bc21")]
-position = Vector2(207, 455)
+position = Vector2(205, 448)
 
 [node name="Node2D2" parent="stalls" instance=ExtResource("4_ibvc7")]
 position = Vector2(972, 478)
@@ -235,7 +235,7 @@ region_rect = Rect2(476, 413, 24, 98)
 position = Vector2(410, 513)
 
 [node name="twotree2" parent="tree" instance=ExtResource("8_n81e6")]
-position = Vector2(95, 509)
+position = Vector2(95, 513)
 
 [node name="onetree" parent="tree" instance=ExtResource("9_ly2kh")]
 z_index = -1
