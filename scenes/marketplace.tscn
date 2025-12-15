@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://dmoek4kbq0v7x"]
+[gd_scene load_steps=23 format=4 uid="uid://dmoek4kbq0v7x"]
 
 [ext_resource type="PackedScene" uid="uid://8ux8todurxo1" path="res://scenes/background.tscn" id="1_dplui"]
 [ext_resource type="Texture2D" uid="uid://cfs3c6nnyb4dl" path="res://autumn town/TileSheet_32x32.png" id="2_tp35m"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://f38h1aosvcmd" path="res://scenes/TaskUI.tscn" id="14_0bmh3"]
 [ext_resource type="Texture2D" uid="uid://ble7jx87qn8fr" path="res://characters/cat player/CAT _alt.png" id="16_nwckl"]
 [ext_resource type="Texture2D" uid="uid://c022ytulpjo6f" path="res://building assets/shop interior/Wall/Wall1.png" id="17_jy53a"]
+[ext_resource type="PackedScene" uid="uid://dq0g603rmpwsj" path="res://scenes/coin.tscn" id="18_tj865"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rkrx5"]
 texture = ExtResource("2_tp35m")
@@ -348,3 +349,19 @@ limit_top = 0
 limit_right = 1150
 limit_bottom = 550
 position_smoothing_enabled = true
+
+[node name="coin count" type="Label" parent="player/Camera2D"]
+unique_name_in_owner = true
+z_index = 15
+offset_left = -21.0
+offset_top = -124.0
+offset_right = 133.0
+offset_bottom = -105.0
+theme_override_colors/font_color = Color(0.3137255, 0.19215687, 0.21176471, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.93333334, 0.8666667, 1)
+theme_override_colors/font_outline_color = Color(1, 0.93333334, 0.8666667, 1)
+text = "Coin Count: 0"
+
+[node name="coin" parent="." instance=ExtResource("18_tj865")]
+z_index = 7
+position = Vector2(337, 493)

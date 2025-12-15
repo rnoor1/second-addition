@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var animatedsprite: AnimatedSprite2D = $animatedsprite2d
 var coinCounter = 0
-@onready var coinLabel = %Label
+@onready var coinLabel = %"coin count"
 
 const SPEED := 150.0
 

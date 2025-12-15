@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=4 uid="uid://bn3qghvgv203v"]
+[gd_scene load_steps=17 format=4 uid="uid://bn3qghvgv203v"]
 
 [ext_resource type="PackedScene" uid="uid://8ux8todurxo1" path="res://scenes/background.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://cfs3c6nnyb4dl" path="res://autumn town/TileSheet_32x32.png" id="1_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://b5y0phbelonxv" path="res://autumn town/props(edited for cropping buildings).png" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://kh1558k4si8g" path="res://scenes/onetree.tscn" id="5_p57ef"]
 [ext_resource type="PackedScene" uid="uid://d30ikc5eie1bi" path="res://scenes/threetree.tscn" id="6_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://dq0g603rmpwsj" path="res://scenes/coin.tscn" id="7_trtic"]
 [ext_resource type="PackedScene" uid="uid://bs2i7xrpsxbfv" path="res://scenes/player.tscn" id="7_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://mfl502f0hbrk" path="res://scenes/door.tscn" id="8_gee14"]
 [ext_resource type="PackedScene" uid="uid://dbnxkontvoxtp" path="res://scenes/markstalltwo.tscn" id="8_vtaks"]
@@ -211,6 +212,18 @@ limit_bottom = 550
 limit_smoothed = true
 position_smoothing_enabled = true
 
+[node name="coin count" type="Label" parent="player/Camera2D"]
+unique_name_in_owner = true
+z_index = 15
+offset_left = 38.0
+offset_top = -106.0
+offset_right = 192.0
+offset_bottom = -87.0
+theme_override_colors/font_color = Color(0.3137255, 0.19215687, 0.21176471, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.93333334, 0.8666667, 1)
+theme_override_colors/font_outline_color = Color(1, 0.93333334, 0.8666667, 1)
+text = "Coin Count: 0"
+
 [node name="doors" type="Node" parent="."]
 
 [node name="door_One" parent="doors" instance=ExtResource("8_gee14")]
@@ -317,6 +330,13 @@ theme_override_colors/font_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
 theme_override_colors/font_shadow_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
 theme_override_font_sizes/font_size = 10
 text = "MARKET PLACE"
+
+[node name="coin" parent="." instance=ExtResource("7_trtic")]
+z_index = 10
+position = Vector2(75, 500)
+
+[node name="coin2" parent="." instance=ExtResource("7_trtic")]
+position = Vector2(641, 498)
 
 [editable path="doors/door_One"]
 [editable path="doors/door_One2"]

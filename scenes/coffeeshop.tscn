@@ -511,6 +511,19 @@ position = Vector2(311, 399)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(4, 4)
+position_smoothing_enabled = true
+
+[node name="coin count" type="Label" parent="player/Camera2D"]
+unique_name_in_owner = true
+z_index = 15
+offset_left = -69.0
+offset_top = -80.0
+offset_right = 85.0
+offset_bottom = -61.0
+theme_override_colors/font_color = Color(0.3137255, 0.19215687, 0.21176471, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.93333334, 0.8666667, 1)
+theme_override_colors/font_outline_color = Color(1, 0.93333334, 0.8666667, 1)
+text = "Coin Count: 0"
 
 [node name="npcs" type="Node" parent="."]
 
