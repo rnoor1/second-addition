@@ -25,4 +25,4 @@ func pickup():
 	# Add apple to inventory ONLY
 	if not Inventory.has_item(item_id):
 		Inventory.add_item(item_id, amount)
-		print("🍎 Apple picked up (still visible in world)")
+		print(" Apple picked up (still visible in world)")

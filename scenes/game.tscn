@@ -283,5 +283,27 @@ texture = ExtResource("12_dinhu")
 
 [node name="TaskUI" parent="." instance=ExtResource("13_kvuet")]
 
+[node name="doorlabel" type="Label" parent="."]
+z_index = 4
+offset_left = 294.0
+offset_top = 436.0
+offset_right = 359.0
+offset_bottom = 459.0
+theme_override_colors/font_color = Color(0.21176471, 0.03529412, 0.05882353, 1)
+theme_override_colors/font_shadow_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
+theme_override_font_sizes/font_size = 12
+text = "coffeeshop"
+
+[node name="doorlabel 2" type="Label" parent="."]
+z_index = 5
+offset_left = 838.0
+offset_top = 397.0
+offset_right = 918.0
+offset_bottom = 420.0
+theme_override_colors/font_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
+theme_override_colors/font_shadow_color = Color(0.2532775, 0.10745586, 0.08468784, 1)
+theme_override_font_sizes/font_size = 10
+text = "MARKETPLACE"
+
 [editable path="doors/door_One"]
 [editable path="doors/door_One2"]
