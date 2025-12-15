@@ -1,18 +1,18 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1765776967
+::res://::1765781380
 gametimer.gd::GDScript::1449996235131847361::1765768627::0::1::::GameTimer<>Node<><>0<>0<><>::
 garbage-pile-clipart.png::CompressedTexture2D::3077920250711913432::1765771767::1765771767::1::::<><><>0<>0<>fca8952a539c02ac085db20f2004fdb1<>res://.godot/imported/garbage-pile-clipart.png-d3e88c00602377d166900d9a768976b7.ctex::
 globalcounter.gd::GDScript::2482553814253117911::1765768627::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::6901627365357737837::1765689537::1765689570::1::::<><><>0<>0<>e02ec2a208d3c49fe9ef5a60a732664f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 Inventory.gd::GDScript::3422849822228708350::1765750629::0::1::::<>Node<><>0<>0<><>::
 navigationManager.gd::GDScript::3699415714028615038::1765750629::0::1::::<>Node<><>0<>0<><>::
+newsweep.gd::GDScript::5361526709516701798::1765776859::0::1::::<>Node<><>0<>0<><>::
 player.gd::GDScript::5020648095835952234::1765689537::0::1::::<>CharacterBody2D<><>0<>0<><>::
 README.md::TextFile::-1::1765689537::0::1::::<><><>0<>0<><>::
-newsweep.gd::GDScript::5361526709516701798::1765776859::0::1::::<>Node<><>0<>0<><>::
-sweep.gd::GDScript::6062373946623032245::1765776967::0::1::::<>CanvasLayer<><>0<>0<><>::
 start_screen.gd::GDScript::1036805753873084234::1765689537::0::1::::<>Control<><>0<>0<><>::
+sweep.gd::GDScript::6062373946623032245::1765776967::0::1::::<>CanvasLayer<><>0<>0<><>::
 TaskManager.gd::GDScript::7589703140374968956::1765776571::0::1::::<>Node<><>0<>0<><>::
-world_item.gd::GDScript::3445956032721287571::1765768627::0::1::::<>Area2D<><>0<>0<><>::
+world_item.gd::GDScript::3445956032721287571::1765778179::0::1::::<>Area2D<><>0<>0<><>::
 ::res://autumn town/::1765689570
 props(edited for cropping buildings).png::CompressedTexture2D::4543176140064505143::1765689537::1765689570::1::::<><><>0<>0<>47a0d83463650713d17ad4a45f2d73f6<>res://.godot/imported/props(edited for cropping buildings).png-ac0fd99cd14d03e19d7f6a264a215533.ctex::
 TileSheet_32x32.png::CompressedTexture2D::5162649681463828173::1765689537::1765689570::1::::<><><>0<>0<>7f721bc6d2aa81e3053e71ca72248d12<>res://.godot/imported/TileSheet_32x32.png-68e58e16229e425064ed8c61d272daa9.ctex::
@@ -61,13 +61,14 @@ license.txt::TextFile::-1::1765689537::0::1::::<><><>0<>0<><>::
 6.png::CompressedTexture2D::7436262372889356405::1765689537::1765689570::1::::<><><>0<>0<>bce7d358f0a26bf384d35b70a5661372<>res://.godot/imported/6.png-5cfc762875e3979fbd35dba362abde01.ctex::
 orig.png::CompressedTexture2D::2100410554664905653::1765689537::1765689570::1::::<><><>0<>0<>4be45ede24d961101745e7a0e35459bf<>res://.godot/imported/orig.png-c3e979f24fd2359dc5bfc78fcd847701.ctex::
 orig_big.png::CompressedTexture2D::9016336220289622706::1765689537::1765689570::1::::<><><>0<>0<>042be3d81fd8d8098213d32a43ac901e<>res://.godot/imported/orig_big.png-a08c43eb7e93aa1742d0da67e3545c5d.ctex::
-::res://backgrounds/background 2/::1765689570
+::res://backgrounds/background 2/::1765778356
 1.png::CompressedTexture2D::4918195379808925301::1765689537::1765689570::1::::<><><>0<>0<>1c4e97fa28cb7681aab89c09e7447026<>res://.godot/imported/1.png-ac51dd1c75fff9ec2997750d3f554030.ctex::
 2.png::CompressedTexture2D::4549257529732566507::1765689537::1765689570::1::::<><><>0<>0<>d9232d1fb24c3a71a381951e62970bec<>res://.godot/imported/2.png-a3bfb62e886bfbc2f27fc1ed1bea1baf.ctex::
 3.png::CompressedTexture2D::456893537366561603::1765689537::1765689570::1::::<><><>0<>0<>c6232ef6eb680e52003a48dff15cc5af<>res://.godot/imported/3.png-a287fe1d4d06806ef75f5914458ccc78.ctex::
 4.png::CompressedTexture2D::5830186689472893825::1765689537::1765689570::1::::<><><>0<>0<>62a3a9992bfab359839bcb7b99715281<>res://.godot/imported/4.png-b89602b6d8f0670144a439df85467702.ctex::
 orig.png::CompressedTexture2D::7006555803897716376::1765689537::1765689570::1::::<><><>0<>0<>954e55a978c718debdd1d1783a24b5c4<>res://.godot/imported/orig.png-38308d517c349e30bda7c53f725bb7f1.ctex::
 orig_big.png::CompressedTexture2D::4497113308535855641::1765689537::1765689570::1::::<><><>0<>0<>9ad04a9faf2ecaea5145fe5456f199a9<>res://.godot/imported/orig_big.png-f020f21f0003321da56c331f2915039b.ctex::
+witch-broom-halloween-png.png::CompressedTexture2D::4833881716007804745::1765778356::1765778356::1::::<><><>0<>0<>6b2f9f08edb9203693df29a5fd854d4a<>res://.godot/imported/witch-broom-halloween-png.png-2ac6de7e2ccac37099ca112df2505494.ctex::
 ::res://backgrounds/background 3/::1765689570
 1.png::CompressedTexture2D::8400100556731318090::1765689537::1765689570::1::::<><><>0<>0<>9a2085741d5c89c63150f0c8b915f66a<>res://.godot/imported/1.png-93528004a7ef4c31645abb9fe1336c34.ctex::
 2.png::CompressedTexture2D::5954091890608123097::1765689537::1765689570::1::::<><><>0<>0<>3fc0c523351e279b2de7f229a34674f4<>res://.godot/imported/2.png-3073c4a3454273c8a625446d21eabdd6.ctex::
@@ -252,7 +253,7 @@ cat-waiter-side.png::CompressedTexture2D::3173157891314709418::1765689537::17656
 48x48.png::CompressedTexture2D::2162093008258955616::1765689537::1765689570::1::::<><><>0<>0<>65e1a3b069b405bf6d7ee2fd2f3fd365<>res://.godot/imported/48x48.png-0c92f5d52cf66ecbca5c1eec81bde914.ctex::
 license.txt::TextFile::-1::1765772360::0::1::::<><><>0<>0<><>::
 preview.png::CompressedTexture2D::163837199392634465::1765689537::1765689570::1::::<><><>0<>0<>f3ca35c25a8fafa80fc5667c1c95a8b6<>res://.godot/imported/preview.png-eb5f9669922d412dbc52d7afdc44f146.ctex::
-::res://npcs/random npcs/::1765777689
+::res://npcs/random npcs/::1765778353
 atok.png::CompressedTexture2D::7661947136294736240::1765689537::1765689570::1::::<><><>0<>0<>875db1e1d60c8538efb3e05da3c89143<>res://.godot/imported/atok.png-2e80d681658dd0bd337ca9b252fbaf1d.ctex::
 chinese_woman.png::CompressedTexture2D::835649786649535664::1765689537::1765689570::1::::<><><>0<>0<>46b073287e7b64fbbc72416c63893869<>res://.godot/imported/chinese_woman.png-a83316ecd3a49b36df1bba33b33dad1c.ctex::
 garbage-pile-clipart.png::CompressedTexture2D::8059249514022285194::1765771763::1765771750::1::::<><><>0<>0<>0300b9cfee176026ce591809136d09d3<>res://.godot/imported/garbage-pile-clipart.png-8f20f0fea4673e7ae392f8e15de88b49.ctex::
@@ -261,42 +262,44 @@ malay_woman.png::CompressedTexture2D::2756777985903301889::1765689537::176568957
 Screenshot 2025-12-14 at 9.48.07 PM.png::CompressedTexture2D::201102049194022248::1765777689::1765777690::1::::<><><>0<>0<>b3b459f29bdc198562a9c726757f7cdf<>res://.godot/imported/Screenshot 2025-12-14 at 9.48.07 PM.png-5bfadf28729e9dea4cbd8edb5f12e2f8.ctex::
 uncle_fisherman.png::CompressedTexture2D::4103595710497437853::1765689537::1765689570::1::::<><><>0<>0<>09e97c517e752a0fcc49cf50f39ab4b7<>res://.godot/imported/uncle_fisherman.png-3878dfe2004a3abc2983478e8b1dc7f6.ctex::
 village_head.png::CompressedTexture2D::6323819880486991665::1765689537::1765689570::1::::<><><>0<>0<>73637cdd29987adc6800a69eb44c9779<>res://.godot/imported/village_head.png-97218e2ba23218d022ae9532f7b8da29.ctex::
-witch-broom-halloween-png.png::CompressedTexture2D::3208718223920368615::1765771164::1765771164::1::::<><><>0<>0<>fa021b139e99240bcbc935472d470db9<>res://.godot/imported/witch-broom-halloween-png.png-dfbff4cd88194034774b5018cddbe2c2.ctex::
-::res://scenes/::1765777365
+witch-broom-halloween-png.png::CompressedTexture2D::3208718223920368615::1765778353::1765771164::1::::<><><>0<>0<>fa021b139e99240bcbc935472d470db9<>res://.godot/imported/witch-broom-halloween-png.png-dfbff4cd88194034774b5018cddbe2c2.ctex::
+::res://scenes/::1765781366
 background.tscn::PackedScene::2358975836903397242::1765689537::0::1::::<><><>0<>0<><>::uid://bwgtdc67w7os3::::res://backgrounds/city background/city 4/9.png
-coffeeshop.tscn::PackedScene::8572053349097642891::1765777365::0::1::::<><><>0<>0<><>::uid://d1wses2ojx8ov::::res://building assets/cat cafe/neko-cafe-tilemap.png<>uid://sdvnwcm7sktd::::res://scenes/grandpamanager.gd<>uid://bbw2kfgbvq1kf::::res://building assets/shop interior/Wall/Wall - all.png<>uid://664x7t12mhtg::::res://building assets/cat cafe/neko-cafe-furnitures.png<>uid://dhxj7jb1hx5qt::::res://building assets/cat cafe/neko-cafe-food.png<>uid://bhpdry7cheymt::::res://building assets/shop interior/Props/props - all.png<>uid://mfl502f0hbrk::::res://scenes/door.tscn<>uid://bs2i7xrpsxbfv::::res://scenes/player.tscn<>uid://cqrmpp84hysop::::res://scenes/coffeeshopcashier.tscn<>uid://dhfrfdkcrrbto::::res://npcs/random npcs/atok.png<>uid://bv22vy87dq1d4::::res://scenes/coffeeshopcharactertwo.tscn<>uid://rvvljfmdydii::::res://scenes/broom.gd<>uid://b5s55p7nqi42r::::res://scenes/coffeeshopcharacter.tscn<>uid://byxr7wkvfq5ii::::res://scenes/garbage_pile_clipart.gd
+broom.gd::GDScript::1237857456247209940::1765780686::0::1::::<>Area2D<><>0<>0<><>::
+coffeeshop.tscn::PackedScene::8572053349097642891::1765781366::0::1::::<><><>0<>0<><>::uid://d1wses2ojx8ov::::res://building assets/cat cafe/neko-cafe-tilemap.png<>uid://sdvnwcm7sktd::::res://scenes/grandpamanager.gd<>uid://bbw2kfgbvq1kf::::res://building assets/shop interior/Wall/Wall - all.png<>uid://664x7t12mhtg::::res://building assets/cat cafe/neko-cafe-furnitures.png<>uid://dhxj7jb1hx5qt::::res://building assets/cat cafe/neko-cafe-food.png<>uid://bhpdry7cheymt::::res://building assets/shop interior/Props/props - all.png<>uid://mfl502f0hbrk::::res://scenes/door.tscn<>uid://bs2i7xrpsxbfv::::res://scenes/player.tscn<>uid://cqrmpp84hysop::::res://scenes/coffeeshopcashier.tscn<>uid://dhfrfdkcrrbto::::res://npcs/random npcs/atok.png<>uid://bv22vy87dq1d4::::res://scenes/coffeeshopcharactertwo.tscn<>uid://rvvljfmdydii::::res://scenes/broom.gd<>uid://b5s55p7nqi42r::::res://scenes/coffeeshopcharacter.tscn<>uid://b70snmxtiw4dh::::res://scenes/witch-broom-halloween-png.png<>uid://byxr7wkvfq5ii::::res://scenes/garbage_pile_clipart.gd<>uid://bj375q0m3u23u::::res://garbage-pile-clipart.png
 coffeeshopcashier.tscn::PackedScene::5931713518392251587::1765689537::0::1::::<><><>0<>0<><>::uid://blhdpgtu3lppy::::res://npcs/coffee shop characters/cat-waiter-side.png
 coffeeshopcharacter.tscn::PackedScene::4531120713903673595::1765689537::0::1::::<><><>0<>0<><>::uid://cugndpicew4it::::res://npcs/coffee shop characters/cat-black-side.png
 coffeeshopcharactertwo.tscn::PackedScene::3917802772925643227::1765689537::0::1::::<><><>0<>0<><>::uid://da2j58mgymho3::::res://npcs/coffee shop characters/cat-orange-side.png
-door.gd::GDScript::6557493153008924468::1765744189::0::1::::Door<>Area2D<><>0<>0<><>::
-door.tscn::PackedScene::853310828218600696::1765744189::0::1::::<><><>0<>0<><>::uid://c0oq7pavqb81u::::res://scenes/door.gd
-FloatingText.tscn::PackedScene::6132380446868079908::1765768627::0::1::::<><><>0<>0<><>::
-game.tscn::PackedScene::3357660815154999001::1765750629::0::1::::<><><>0<>0<><>::uid://8ux8todurxo1::::res://scenes/background.tscn<>uid://cfs3c6nnyb4dl::::res://autumn town/TileSheet_32x32.png<>uid://b5y0phbelonxv::::res://autumn town/props(edited for cropping buildings).png<>uid://kh1558k4si8g::::res://scenes/onetree.tscn<>uid://d30ikc5eie1bi::::res://scenes/threetree.tscn<>uid://bs2i7xrpsxbfv::::res://scenes/player.tscn<>uid://mfl502f0hbrk::::res://scenes/door.tscn<>uid://dbnxkontvoxtp::::res://scenes/markstalltwo.tscn<>uid://1xkgvryjklhn::::res://scenes/marketstallthree.tscn<>uid://dfattgy37fa3c::::res://scenes/marketstallone.tscn<>uid://t1lur0xdi2je::::res://scenes/twotree.tscn<>uid://bw06yw34t0gyv::::res://building assets/shop interior/Props/door.png<>uid://f38h1aosvcmd::::res://scenes/TaskUI.tscn
+coin.gd::GDScript::5754340657053568268::1765778179::0::1::::<>Area2D<><>0<>0<><>::
+coin.tscn::PackedScene::8334314011834297373::1765778179::0::1::::<><><>0<>0<><>::uid://cn8pfdj0obxv5::::res://scenes/coin.gd<>uid://cmfft8s6k6aaj::::res://title screen:ui/coin.png
+door.gd::GDScript::6557493153008924468::1765778179::0::1::::Door<>Area2D<><>0<>0<><>::
+door.tscn::PackedScene::853310828218600696::1765778179::0::1::::<><><>0<>0<><>::uid://c0oq7pavqb81u::::res://scenes/door.gd
+game.tscn::PackedScene::3357660815154999001::1765778179::0::1::::<><><>0<>0<><>::uid://8ux8todurxo1::::res://scenes/background.tscn<>uid://cfs3c6nnyb4dl::::res://autumn town/TileSheet_32x32.png<>uid://b5y0phbelonxv::::res://autumn town/props(edited for cropping buildings).png<>uid://kh1558k4si8g::::res://scenes/onetree.tscn<>uid://d30ikc5eie1bi::::res://scenes/threetree.tscn<>uid://dq0g603rmpwsj::::res://scenes/coin.tscn<>uid://bs2i7xrpsxbfv::::res://scenes/player.tscn<>uid://mfl502f0hbrk::::res://scenes/door.tscn<>uid://dbnxkontvoxtp::::res://scenes/markstalltwo.tscn<>uid://1xkgvryjklhn::::res://scenes/marketstallthree.tscn<>uid://dfattgy37fa3c::::res://scenes/marketstallone.tscn<>uid://t1lur0xdi2je::::res://scenes/twotree.tscn<>uid://bw06yw34t0gyv::::res://building assets/shop interior/Props/door.png<>uid://f38h1aosvcmd::::res://scenes/TaskUI.tscn
+garbage_pile_clipart.gd::GDScript::4119524125554476416::1765780629::0::1::::<>Area2D<><>0<>0<><>::
+grandpamanager.gd::GDScript::1270891750107641153::1765774859::0::1::::<>Node2D<><>0<>0<><>::
 ingame_ui.tscn::PackedScene::3246279987699924083::1765768627::0::1::::<><><>0<>0<><>::uid://f01x8al61ugr::::res://scenes/popup_menu.gd<>uid://chnj46e8skdw4::::res://title screen:ui/UiCozyFree.png<>uid://dj54jg7hvustm::::res://title screen:ui/CatUIFree/free.png<>uid://bs76dcp3vb5w5::::res://fonts/3_4_r_font_.ttf<>uid://dsfxjpns530ye::::res://scenes/stat_displaymenu.gd
-marketplace.tscn::PackedScene::8030691727895666579::1765768627::0::1::::<><><>0<>0<><>::uid://8ux8todurxo1::::res://scenes/background.tscn<>uid://cfs3c6nnyb4dl::::res://autumn town/TileSheet_32x32.png<>uid://1xkgvryjklhn::::res://scenes/marketstallthree.tscn<>uid://dfattgy37fa3c::::res://scenes/marketstallone.tscn<>uid://dbnxkontvoxtp::::res://scenes/markstalltwo.tscn<>uid://b5y0phbelonxv::::res://autumn town/props(edited for cropping buildings).png<>uid://bs2i7xrpsxbfv::::res://scenes/player.tscn<>uid://t1lur0xdi2je::::res://scenes/twotree.tscn<>uid://kh1558k4si8g::::res://scenes/onetree.tscn<>uid://d30ikc5eie1bi::::res://scenes/threetree.tscn<>uid://mfl502f0hbrk::::res://scenes/door.tscn<>uid://do1whiihv8fxn::::res://scenes/vendor.gd<>uid://bp53cphesckfu::::res://sounds/pickup.wav<>uid://br3aa6ffwbsy5::::res://scenes/world_item.tscn<>uid://f38h1aosvcmd::::res://scenes/TaskUI.tscn
+marketplace.tscn::PackedScene::8030691727895666579::1765778179::0::1::::<><><>0<>0<><>::uid://8ux8todurxo1::::res://scenes/background.tscn<>uid://cfs3c6nnyb4dl::::res://autumn town/TileSheet_32x32.png<>uid://1xkgvryjklhn::::res://scenes/marketstallthree.tscn<>uid://dfattgy37fa3c::::res://scenes/marketstallone.tscn<>uid://dbnxkontvoxtp::::res://scenes/markstalltwo.tscn<>uid://b5y0phbelonxv::::res://autumn town/props(edited for cropping buildings).png<>uid://bs2i7xrpsxbfv::::res://scenes/player.tscn<>uid://t1lur0xdi2je::::res://scenes/twotree.tscn<>uid://kh1558k4si8g::::res://scenes/onetree.tscn<>uid://d30ikc5eie1bi::::res://scenes/threetree.tscn<>uid://mfl502f0hbrk::::res://scenes/door.tscn<>uid://do1whiihv8fxn::::res://scenes/vendor.gd<>uid://bp53cphesckfu::::res://sounds/pickup.wav<>uid://br3aa6ffwbsy5::::res://scenes/world_item.tscn<>uid://f38h1aosvcmd::::res://scenes/TaskUI.tscn<>uid://ble7jx87qn8fr::::res://characters/cat player/CAT _alt.png<>uid://c022ytulpjo6f::::res://building assets/shop interior/Wall/Wall1.png<>uid://dq0g603rmpwsj::::res://scenes/coin.tscn
 marketstallone.tscn::PackedScene::7511394175746779874::1765689537::0::1::::<><><>0<>0<><>::uid://b5y0phbelonxv::::res://autumn town/props(edited for cropping buildings).png
 marketstallthree.tscn::PackedScene::1873009637978222151::1765689537::0::1::::<><><>0<>0<><>::uid://b5y0phbelonxv::::res://autumn town/props(edited for cropping buildings).png
 markstalltwo.tscn::PackedScene::7257702910594063313::1765689537::0::1::::<><><>0<>0<><>::uid://b5y0phbelonxv::::res://autumn town/props(edited for cropping buildings).png
 node_2d.tscn::PackedScene::3635556600670521889::1765768627::0::1::::<><><>0<>0<><>::
 onetree.tscn::PackedScene::717972923460693096::1765689537::0::1::::<><><>0<>0<><>::uid://b057tlr16sbu::::res://autumn town/Props & Scenery/Props_ForestDay.png
-player.gd::GDScript::3462410435267511231::1765766615::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::3706102184889605435::1765749928::0::1::::<><><>0<>0<><>::uid://beurb7qq6n8fl::::res://characters/cat player/Cat_sheets/Cat_idle_1.png<>uid://bplhnnp7hf5wd::::res://scenes/player.gd<>uid://bcy2xnuij714c::::res://characters/cat player/Cat_sheets/Cat_jump_1.png<>uid://cvdd7jgmyg1y5::::res://characters/cat player/Cat_sheets/Cat_walk_1.png
+player.gd::GDScript::3462410435267511231::1765778179::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::3706102184889605435::1765778179::0::1::::<><><>0<>0<><>::uid://beurb7qq6n8fl::::res://characters/cat player/Cat_sheets/Cat_idle_1.png<>uid://bplhnnp7hf5wd::::res://scenes/player.gd<>uid://bcy2xnuij714c::::res://characters/cat player/Cat_sheets/Cat_jump_1.png<>uid://cvdd7jgmyg1y5::::res://characters/cat player/Cat_sheets/Cat_walk_1.png
 popup_menu.gd::GDScript::404175110926213069::1765768627::0::1::::<>MarginContainer<><>0<>0<><>::
-grandpamanager.gd::GDScript::1270891750107641153::1765774859::0::1::::<>Node2D<><>0<>0<><>::
-broom.gd::GDScript::1237857456247209940::1765776549::0::1::::<>Area2D<><>0<>0<><>::
-garbage_pile_clipart.gd::GDScript::4119524125554476416::1765776967::0::1::::<>Area2D<><>0<>0<><>::
 start_screen.tscn::PackedScene::2417178637780777641::1765689537::0::1::::<><><>0<>0<><>::uid://o1ibloey3kys::::res://start_screen.gd<>uid://bdua706pxp3cx::::res://building assets/cat cafe/traffic-city-urban-skyscraper-building-cityscape-view-flat-design-vector.jpg<>uid://btwpio5ff41u0::::res://building assets/cat cafe/8 - Melancholic flavors.mp3
 stat_displaymenu.gd::GDScript::8434396497104725208::1765768627::0::1::::<>VBoxContainer<><>0<>0<><>::
-TaskUI.tscn::PackedScene::410764322890545067::1765750735::0::1::::<><><>0<>0<><>::uid://bcu2tso0ynu5k::::res://scenes/task_ui.gd
-task_ui.gd::GDScript::2569760183155306078::1765777092::0::1::::<>CanvasLayer<><>0<>0<><>::
+TaskUI.tscn::PackedScene::410764322890545067::1765778179::0::1::::<><><>0<>0<><>::uid://bcu2tso0ynu5k::::res://scenes/task_ui.gd
+task_ui.gd::GDScript::2569760183155306078::1765778227::0::1::::<>CanvasLayer<><>0<>0<><>::
 threetree.tscn::PackedScene::9176662862260337458::1765689537::0::1::::<><><>0<>0<><>::uid://b057tlr16sbu::::res://autumn town/Props & Scenery/Props_ForestDay.png
 twotree.tscn::PackedScene::1387966386093131058::1765689537::0::1::::<><><>0<>0<><>::uid://b057tlr16sbu::::res://autumn town/Props & Scenery/Props_ForestDay.png
-vendor.gd::GDScript::8196928390908158311::1765776691::0::1::::<>Area2D<><>0<>0<><>::
+vendor.gd::GDScript::8196928390908158311::1765779526::0::1::::<>Area2D<><>0<>0<><>::
 witch-broom-halloween-png.png::CompressedTexture2D::4685189911837757105::1765771155::1765771155::1::::<><><>0<>0<>185036228446287ed236940357bda52f<>res://.godot/imported/witch-broom-halloween-png.png-111e15789d03ba9666733f0d77cdbb55.ctex::
 world_item.tscn::PackedScene::3637435238857839326::1765768627::0::1::::<><><>0<>0<><>::uid://bpdinlu3fuw7l::::res://world_item.gd<>uid://dl3qwcjcgaule::::res://building assets/cat cafe/apple .png<>uid://bp53cphesckfu::::res://sounds/pickup.wav
 ::res://sounds/::1765768627
 pickup.wav::AudioStreamWAV::3502889117140420054::1765768627::1765768627::1::::<><><>0<>0<>f38feab462c5686dc73139491c95ea05<>res://.godot/imported/pickup.wav-474f1e6e10d6e89a37f44ac036a26294.sample::
-::res://title screen:ui/::1765689570
+::res://title screen:ui/::1765778179
+coin.png::CompressedTexture2D::5625768657361029121::1765778179::1765778179::1::::<><><>0<>0<>53b24740ce736582e2a9e5f7396e1610<>res://.godot/imported/coin.png-55fbe5e8612ec7242777f8c590590cde.ctex::
 UiCozyFree.png::CompressedTexture2D::5291600060540238501::1765689537::1765689570::1::::<><><>0<>0<>5a5abb80c83a4803b030321ca7f47fdd<>res://.godot/imported/UiCozyFree.png-c6f8ab85510e9d6387404dded567ff8c.ctex::
 ::res://title screen:ui/CatUIFree/::1765689570
 free.png::CompressedTexture2D::7854670206299520170::1765689537::1765689570::1::::<><><>0<>0<>26791f5fa0373f84aa9166626dedd0ff<>res://.godot/imported/free.png-01803025af8bc5d7683fb41b49832ec0.ctex::

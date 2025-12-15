@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://duemp4aflqtdj"]
+[gd_scene load_steps=30 format=4 uid="uid://duemp4aflqtdj"]
 
 [ext_resource type="Texture2D" uid="uid://d1wses2ojx8ov" path="res://building assets/cat cafe/neko-cafe-tilemap.png" id="1_b21hk"]
 [ext_resource type="Script" uid="uid://sdvnwcm7sktd" path="res://scenes/grandpamanager.gd" id="2_2eptr"]
@@ -13,78 +13,15 @@
 [ext_resource type="PackedScene" uid="uid://bv22vy87dq1d4" path="res://scenes/coffeeshopcharactertwo.tscn" id="9_tom0m"]
 [ext_resource type="Script" uid="uid://rvvljfmdydii" path="res://scenes/broom.gd" id="10_gn0fu"]
 [ext_resource type="PackedScene" uid="uid://b5s55p7nqi42r" path="res://scenes/coffeeshopcharacter.tscn" id="10_tpt6m"]
+[ext_resource type="Texture2D" uid="uid://b70snmxtiw4dh" path="res://scenes/witch-broom-halloween-png.png" id="11_gn0fu"]
 [ext_resource type="Script" uid="uid://byxr7wkvfq5ii" path="res://scenes/garbage_pile_clipart.gd" id="12_ix5ng"]
+[ext_resource type="Texture2D" uid="uid://bj375q0m3u23u" path="res://garbage-pile-clipart.png" id="13_cbx1d"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cbx1d"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2eptr"]
-atlas = ExtResource("8_sqa1m")
-region = Rect2(0, 0, 56, 32)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ix5ng"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ix5ng"]
-atlas = ExtResource("8_sqa1m")
-region = Rect2(56, 0, 56, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gn0fu"]
-atlas = ExtResource("8_sqa1m")
-region = Rect2(56, 32, 56, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cbx1d"]
-atlas = ExtResource("8_sqa1m")
-region = Rect2(56, 64, 56, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5i20m"]
-atlas = ExtResource("8_sqa1m")
-region = Rect2(56, 96, 56, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_acbjc"]
-atlas = ExtResource("8_sqa1m")
-region = Rect2(0, 96, 56, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mpuqc"]
-atlas = ExtResource("8_sqa1m")
-region = Rect2(0, 64, 56, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ueec8"]
-atlas = ExtResource("8_sqa1m")
-region = Rect2(0, 32, 56, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_0o2uk"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2eptr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ix5ng")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gn0fu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cbx1d")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5i20m")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_acbjc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mpuqc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ueec8")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"new_animation",
-"speed": 5.0
-}]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2eptr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yyi55"]
 texture = ExtResource("1_b21hk")
@@ -508,29 +445,56 @@ sources/1 = SubResource("TileSetAtlasSource_ppomn")
 sources/2 = SubResource("TileSetAtlasSource_pw4vi")
 sources/3 = SubResource("TileSetAtlasSource_qtn0i")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5i20m"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2eptr"]
-
 [node name="coffeeshop" type="Node2D"]
 
 [node name="Grandpamanager" type="Sprite2D" parent="."]
-position = Vector2(547, 292)
-scale = Vector2(0.19, 0.18461539)
+z_index = 10
+position = Vector2(555.25, 286)
+scale = Vector2(0.35500035, 0.2769231)
 texture = ExtResource("8_sqa1m")
+centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 100, 130)
 script = ExtResource("2_2eptr")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Grandpamanager"]
+[node name="Sprite2D" type="Sprite2D" parent="Grandpamanager"]
+z_index = 10
+position = Vector2(-26.76056, -12.638855)
+scale = Vector2(0.46478882, 0.80555606)
+texture = ExtResource("8_sqa1m")
+region_enabled = true
+region_rect = Rect2(0, 0, 100, 130)
 
-[node name="InteractArea" type="Area2D" parent="Grandpamanager/AnimatedSprite2D"]
+[node name="InteractArea" type="Area2D" parent="Grandpamanager"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Grandpamanager/AnimatedSprite2D/InteractArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Grandpamanager/InteractArea"]
 shape = SubResource("CircleShape2D_cbx1d")
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Grandpamanager"]
-sprite_frames = SubResource("SpriteFrames_0o2uk")
+[node name="broom" type="Area2D" parent="Grandpamanager/InteractArea"]
+position = Vector2(-107.74634, -137.22223)
+scale = Vector2(0.1368208, 0.2269842)
+script = ExtResource("10_gn0fu")
+
+[node name="Sprite2D" type="Sprite2D" parent="Grandpamanager/InteractArea/broom"]
+position = Vector2(20.588236, -63.63634)
+scale = Vector2(0.9999999, 1)
+texture = ExtResource("11_gn0fu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Grandpamanager/InteractArea/broom"]
+shape = SubResource("RectangleShape2D_ix5ng")
+
+[node name="GarbagePileClipart" type="Area2D" parent="."]
+position = Vector2(565, 371)
+scale = Vector2(0.08578124, 0.072578155)
+script = ExtResource("12_ix5ng")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GarbagePileClipart"]
+shape = SubResource("RectangleShape2D_2eptr")
+
+[node name="Sprite2D" type="Sprite2D" parent="GarbagePileClipart"]
+position = Vector2(260.4736, -54.665146)
+scale = Vector2(0.8642987, 0.8588092)
+texture = ExtResource("13_cbx1d")
 
 [node name="structure" type="TileMap" parent="."]
 z_index = 13
@@ -561,9 +525,10 @@ tile_set = SubResource("TileSet_pw4vi")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = -15
-offset_top = 1.0
-offset_right = 1146.0
-offset_bottom = 646.0
+offset_left = 20.0
+offset_top = 15.0
+offset_right = 1166.0
+offset_bottom = 660.0
 color = Color(0.50980395, 0.42745098, 0.32941177, 1)
 
 [node name="door" type="Node" parent="."]
@@ -606,25 +571,6 @@ text = "Press E to Exit
 z_index = 16
 position = Vector2(311, 399)
 
-[node name="broom" type="Area2D" parent="player"]
-position = Vector2(205.99997, -151)
-scale = Vector2(0.04857143, 0.062857166)
-script = ExtResource("10_gn0fu")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player/broom"]
-scale = Vector2(0.99999994, 1)
-shape = SubResource("RectangleShape2D_5i20m")
-
-[node name="Sprite2D" type="Sprite2D" parent="player/broom"]
-
-[node name="GarbagePileClipart" type="Area2D" parent="player"]
-position = Vector2(254, -28.00001)
-scale = Vector2(0.08578124, 0.072578155)
-script = ExtResource("12_ix5ng")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player/GarbagePileClipart"]
-shape = SubResource("RectangleShape2D_2eptr")
-
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(4, 4)
 position_smoothing_enabled = true
@@ -640,13 +586,6 @@ theme_override_colors/font_color = Color(0.3137255, 0.19215687, 0.21176471, 1)
 theme_override_colors/font_shadow_color = Color(1, 0.93333334, 0.8666667, 1)
 theme_override_colors/font_outline_color = Color(1, 0.93333334, 0.8666667, 1)
 text = "Coin Count: 0"
-
-[node name="Atok" type="Sprite2D" parent="player"]
-position = Vector2(242, -110)
-scale = Vector2(0.205, 0.23846158)
-texture = ExtResource("8_sqa1m")
-region_enabled = true
-region_rect = Rect2(0, 0, 100, 130)
 
 [node name="npcs" type="Node" parent="."]
 
@@ -664,8 +603,7 @@ z_index = 17
 position = Vector2(346, 302)
 motion_mode = 1
 
-[connection signal="body_entered" from="Grandpamanager/AnimatedSprite2D/InteractArea" to="Grandpamanager" method="_on_interact_area_body_entered"]
-[connection signal="body_exited" from="Grandpamanager/AnimatedSprite2D/InteractArea" to="Grandpamanager" method="_on_interact_area_body_exited"]
-[connection signal="body_entered" from="player/broom" to="player/broom" method="_on_body_entered"]
+[connection signal="body_entered" from="Grandpamanager/InteractArea" to="Grandpamanager" method="_on_interact_area_body_entered"]
+[connection signal="body_exited" from="Grandpamanager/InteractArea" to="Grandpamanager" method="_on_interact_area_body_exited"]
 
 [editable path="door/door_Two"]

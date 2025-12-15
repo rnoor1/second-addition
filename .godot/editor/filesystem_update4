@@ -1,9 +1,0 @@
-res://scenes/coffeeshop.tscn
-res://npcs/old_man/license.txt
-res://TaskManager.gd
-res://scenes/grandpamanager.gd
-res://scenes/broom.gd
-res://scenes/vendor.gd
-res://scenes/garbage_pile_clipart.gd
-res://sweep.gd
-res://scenes/task_ui.gd
