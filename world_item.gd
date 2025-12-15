@@ -11,9 +11,7 @@ func _ready():
 
 func _process(_delta):
 	if player_inside and Input.is_action_just_pressed("interact"):
-		Inventory.add_item(item_id, amount)
-		print("Picked up:", item_id)
-		queue_free()
+		pickup()
 
 func _on_body_entered(body):
 	if body.is_in_group("player"):
@@ -22,3 +20,9 @@ func _on_body_entered(body):
 func _on_body_exited(body):
 	if body.is_in_group("player"):
 		player_inside = false
+
+func pickup():
+	# Add apple to inventory ONLY
+	if not Inventory.has_item(item_id):
+		Inventory.add_item(item_id, amount)
+		print("🍎 Apple picked up (still visible in world)")

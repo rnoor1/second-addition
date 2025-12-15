@@ -8,3 +8,8 @@ res://scenes/game.tscn
 res://scenes/CanvasLayer.tscn
 res://scenes/task_ui.gd
 res://scenes/TaskUI.tscn
+res://scenes/coffeeshop.tscn
+res://scenes/player.gd
+res://scenes/FloatingText.tscn
+res://scenes/floating_text.gd
+res://world_item.gd
