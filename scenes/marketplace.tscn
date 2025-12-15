@@ -330,12 +330,12 @@ texture = ExtResource("17_jy53a")
 
 [node name="shoplabel" type="Label" parent="."]
 z_index = 1
-offset_left = 636.0
-offset_top = 390.0
-offset_right = 720.0
-offset_bottom = 413.0
+offset_left = 619.0
+offset_top = 391.0
+offset_right = 749.0
+offset_bottom = 414.0
 theme_override_colors/font_color = Color(0.2, 0.05882353, 0.12941177, 1)
-text = "APPLESHOP"
+text = "APPLE ORCHARD"
 
 [node name="player" parent="." instance=ExtResource("7_ibvc7")]
 z_index = 15
